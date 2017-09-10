@@ -1,0 +1,20 @@
+
+.kk_aj_thumbnail{
+     width: auto;
+      height: auto;
+    ax-height: 150px;    
+    overflow: hidden;
+    background: #ccc;
+    margin: 10px;
+    text-align: center;
+    line-height: 150px;
+    background-color:#ccc;
+    display:block;
+}
+.kk_aj_thumbnail img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    object-fit: cover;
+  
+}
