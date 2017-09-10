@@ -1,0 +1,8 @@
+I:\wwwroot\dnndev.me\bin\Dnn_module_kk_aj_Publik_productlist.dll
+I:\wwwroot\dnndev.me\bin\Dnn_module_kk_aj_Publik_productlist.pdb
+I:\wwwroot\dnndev.me\bin\Dnn_module_kk_aj_Publik_productlist.xml
+I:\wwwroot\dnndev.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Release\Dnn_module_kk_aj_Publik_productlist.dll
+I:\wwwroot\dnndev.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Release\Dnn_module_kk_aj_Publik_productlist.xml
+I:\wwwroot\dnndev.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Release\Dnn_module_kk_aj_Publik_productlist.pdb
+I:\wwwroot\dnndev.me\bin\Dnn_module_kk_aj_Publik_productlist.dll.config
+I:\wwwroot\dnndev.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Release\Dnn_module_kk_aj_Publik_productlist.vbprojResolveAssemblyReference.cache
