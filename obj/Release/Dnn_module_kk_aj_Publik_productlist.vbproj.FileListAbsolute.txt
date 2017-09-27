@@ -6,3 +6,11 @@ I:\wwwroot\dnndev.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Rele
 I:\wwwroot\dnndev.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Release\Dnn_module_kk_aj_Publik_productlist.pdb
 I:\wwwroot\dnndev.me\bin\Dnn_module_kk_aj_Publik_productlist.dll.config
 I:\wwwroot\dnndev.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Release\Dnn_module_kk_aj_Publik_productlist.vbprojResolveAssemblyReference.cache
+D:\wwwroot\dnndev_v902.me\bin\Dnn_module_kk_aj_Publik_productlist.dll.config
+D:\wwwroot\dnndev_v902.me\bin\Dnn_module_kk_aj_Publik_productlist.dll
+D:\wwwroot\dnndev_v902.me\bin\Dnn_module_kk_aj_Publik_productlist.pdb
+D:\wwwroot\dnndev_v902.me\bin\Dnn_module_kk_aj_Publik_productlist.xml
+D:\wwwroot\dnndev_v902.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Release\Dnn_module_kk_aj_Publik_productlist.vbprojResolveAssemblyReference.cache
+D:\wwwroot\dnndev_v902.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Release\Dnn_module_kk_aj_Publik_productlist.dll
+D:\wwwroot\dnndev_v902.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Release\Dnn_module_kk_aj_Publik_productlist.xml
+D:\wwwroot\dnndev_v902.me\DesktopModules\Dnn_module_kk_aj_Publik_productlist\obj\Release\Dnn_module_kk_aj_Publik_productlist.pdb

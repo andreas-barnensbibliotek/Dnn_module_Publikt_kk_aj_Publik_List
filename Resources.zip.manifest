@@ -37,6 +37,10 @@
       <name>View.ascx.resx</name>
     </file>
     <file>
+      <path>css/</path>
+      <name>kk_aj_publikt_CSS2.css</name>
+    </file>
+    <file>
       <path>Documentation/</path>
       <name>Documentation.css</name>
     </file>
