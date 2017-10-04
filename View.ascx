@@ -2,6 +2,30 @@
 
 <!-- Main search -->
 <div class="small-12 columns kk_aj_superProductListBlock">
+    <div class="row kk_aj_mainFreetextSearchblock">
+        
+            <!-- use a tag for links to other locations -->
+            <!-- use button tag for on page actions -->
+            <div class="small-12 text-center columns kk_aj_searchHeader" >
+                <h2>Hitta arrangemang</h2>
+                <p>Kulturkatalogen väst är en del av Västra Götalandsregionen</p>
+            </div>       
+            <div class="small-6 small-centered columns " >
+               
+                <div class="row collapse postfix-radius">
+                    <div class="small-10 columns">
+                       <input type="text" id="kk_aj_freetextSearch" class="kk_aj_freetextSearch" placeholder="Sök i kulturkatalogen"/>
+                    </div>
+                    <div class="small-2 columns">
+                      <a href="#" id="kk_aj_btnfreetextSearch" class="kk_aj_btnfreetextSearch button postfix">Sök</a>
+                    </div>
+                </div>
+            </div>      
+        
+        
+    </div>
+
+
     <div class="row kk_aj_mainsearchblock">
         <div class="small-12 columns">
             <!-- use a tag for links to other locations -->
@@ -150,61 +174,61 @@
     <div class="row kk_aj_mainproductlistblock">
         <div class="medium-12 large-3 columns " > 
             <div class="jplist-panel">
-            <div class="row">
-                <div class="small-12 columns ">
-                   <select 
-                     class="jplist-select" 
-                     data-control-type="filter-select" 
-                     data-control-name="category-filter" 
-                     data-control-action="filter">       
+                <div class="row">
+                    <div class="small-12 columns ">
+                       <select 
+                         class="jplist-select" 
+                         data-control-type="filter-select" 
+                         data-control-name="category-filter" 
+                         data-control-action="filter">       
          
-                       <option data-path="default">Visa alla</option>
-                       <option data-path=".konstform_1">Konst, from, design</option>
-                       <option data-path=".konstform_2">Teater</option>
-                       <option data-path=".konstform_3">Film</option>
-                       <option data-path=".konstform_4">Dans</option>
-                       <option data-path=".konstform_5">Slöjd</option>								
-                  </select>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="small-12 medium-9 columns">
-                    <div class="range-slider" data-slider data-options="display_selector: #sliderOutput3;">
-                        <span class="range-slider-handle" role="slider" tabindex="0"></span>
-                        <span class="range-slider-active-segment"></span>
+                           <option data-path="default">Visa alla</option>
+                           <option data-path=".konstform_1">Konst, from, design</option>
+                           <option data-path=".konstform_2">Teater</option>
+                           <option data-path=".konstform_3">Film</option>
+                           <option data-path=".konstform_4">Dans</option>
+                           <option data-path=".konstform_5">Slöjd</option>								
+                      </select>
                     </div>
                 </div>
-                <div class="small-12 medium-3 columns">
-                    <span id="sliderOutput3"></span>
+
+                <div class="row">
+                    <div class="small-12 medium-9 columns">
+                        <div class="range-slider" data-slider data-options="display_selector: #sliderOutput3;">
+                            <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                            <span class="range-slider-active-segment"></span>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-3 columns">
+                        <span id="sliderOutput3"></span>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="row">
-                <div class="small-12 columns kk_aj_searchfilterblock">
-                    <div 
-                         class="jplist-range-slider"
-                         data-control-type="range-slider" 
-                         data-control-name="range-slider-likes" 
-                         data-control-action="filter"
-                         data-path=".konstform_1"
-                         data-slider-func="likesSlider" 
-                         data-setvalues-func="likesValues">
+                <div class="row">
+                    <div class="small-12 columns kk_aj_searchfilterblock">
+                        <div 
+                             class="jplist-range-slider"
+                             data-control-type="range-slider" 
+                             data-control-name="range-slider-likes" 
+                             data-control-action="filter"
+                             data-path=".like"
+                             data-slider-func="likesSlider" 
+                             data-setvalues-func="likesValues">
                         
-                         <div class="value" data-type="prev-value"></div>
-                         <div class="ui-slider" data-type="ui-slider"></div>
-                         <div class="value" data-type="next-value"></div>
-                    </div>	
+                             <div class="value kk_aj_yearslider" data-type="prev-value"></div>
+                             <div class="ui-slider" data-type="ui-slider"></div>
+                             <div class="value kk_aj_yearslider" data-type="next-value"></div>
+                          </div>	
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="small-12 columns">
-                    <label>Check these out</label>
-                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                <div class="row">
+                    <div class="small-12 columns">
+                        <label>Check these out</label>
+                        <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                        <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
 
@@ -218,7 +242,7 @@
                             <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/dscf2239_h_0.jpg" alt="">
                         </a>
                     </div>
-                    <div class="medium-9 columns">
+                    <div class="medium-9 columns ">
                         <div class="row">
                             <div class="kk_aj_arr_item_contentblock medium-8 columns">
                                 <a href="#">
@@ -234,7 +258,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Teater Tropos</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Dans</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 13-16 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 13-16 år</h4></div>
+                            <p class="like">5 Likes</p><p class="like">8 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -261,7 +286,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <p class="like">3 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -288,7 +314,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <p class="like">15 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -315,7 +342,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <p class="like">1 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -342,7 +370,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <p class="like">5 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -369,7 +398,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 0-10 år</h4></div>
+                            <p class="like">5 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -396,7 +426,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>larssons och ADAS teater</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 15-18 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 15-18 år</h4></div>
+                            <p class="like">25 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -423,7 +454,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Teater Trixter</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 16-19 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 16-19 år</h4></div>
+                            <p class="like">23 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -450,7 +482,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <p class="like">45 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -477,7 +510,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <p class="like">5 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -504,7 +538,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <p class="like">8 Likes</p>
                         </div>
                     </div>
                 </div>
@@ -531,7 +566,8 @@
                         <div class="row">
                             <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
                             <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <p class="like">9 Likes</p>
                         </div>
                     </div>
                 </div>
