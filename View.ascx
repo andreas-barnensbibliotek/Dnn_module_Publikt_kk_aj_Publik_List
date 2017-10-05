@@ -6,18 +6,19 @@
         
             <!-- use a tag for links to other locations -->
             <!-- use button tag for on page actions -->
-            <div class="small-12 text-center columns kk_aj_searchHeader" >
-                <h2>Hitta arrangemang</h2>
-                <p>Kulturkatalogen väst är en del av Västra Götalandsregionen</p>
+            <div class="small-12 medium-8 text-center small-centered  columns kk_aj_searchHeader" >
+                <h1>Kulturkatalogen Väst</h1>
+                <p>Kulturkatalogen väst är Västra Götalandsregionen gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.</p>
+                <p>Hitta artister och konstnärer som går att engagera till <br />skolor, bibiliotek. fitidsgårdar och föreningar</p>
             </div>       
-            <div class="small-6 small-centered columns " >
+            <div class="small-12 medium-8 small-centered columns " >
                
                 <div class="row collapse postfix-radius">
                     <div class="small-10 columns">
                        <input type="text" id="kk_aj_freetextSearch" class="kk_aj_freetextSearch" placeholder="Sök i kulturkatalogen"/>
                     </div>
                     <div class="small-2 columns">
-                      <a href="#" id="kk_aj_btnfreetextSearch" class="kk_aj_btnfreetextSearch button postfix">Sök</a>
+                      <a href="#" id="kk_aj_btnfreetextSearch" class="kk_aj_btnfreetextSearch button success postfix"><i class="fa fa-search" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>      
@@ -158,21 +159,39 @@
         <div class="row">
             <div class="small-12 text-center columns kk_aj_searchbuttonblock">
                 <!-- use a tag for links to other locations -->
-                <!-- use button tag for on page actions -->
-                <button class="button round success kk_aj_searchformbutton ">Hitta arrangemang</button>
+                <!-- search button -->
+                <button class="button round success kk_aj_searchformbutton ">Hitta arrangemang</button>                        
 
-                <!-- use button tag for on page actions -->
-                <button class="button round secondary ">Nollställ sökning</button>
+                <!-- reset button -->
+                <button type="button" class="button round secondary kk_aj_searchRensaformbutton">Nollställ sökning</button>
+                <%--<span class="jplist-panel jplist-panel-small">
+                  <button 
+                     type="button" 
+                     class="jplist-reset-btn button round secondary kk_aj_searchRensaformbutton"
+                     data-control-type="reset" 
+                     data-control-name="reset" 
+                     data-control-action="reset">
+                     Nollställ sökning
+                  </button>
+               </span>--%>
             </div>
         </div>
     </div>
 
     
 
-    
+    <div class="row kk_aj_filterRubrikBlock ">
+        <div class="medium-12 large-3 columns"></div>
+        <div class="medium-12 large-9 columns"><h3>Filtrerade arrangemang</h3></div>
+    </div>
     <!--Produktlista och filter -->
     <div class="row kk_aj_mainproductlistblock">
-        <div class="medium-12 large-3 columns " > 
+       
+        <div class="small-12 large-3 columns kk_aj_filterblock " > 
+            <div class="jplist-ios-button">	
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>	            
+		            Filter
+	            </div>
             <div class="jplist-panel">
                 <div class="row">
                     <div class="small-12 columns ">
@@ -202,6 +221,7 @@
                     <div class="small-12 medium-3 columns">
                         <span id="sliderOutput3"></span>
                     </div>
+                    
                 </div>
 
 
@@ -229,344 +249,355 @@
                         <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="small-12 medium-9 columns">
+                        <button 
+                             type="button" 
+                             class="jplist-reset-btn button secondary "
+                             data-control-type="reset" 
+                             data-control-name="reset" 
+                             data-control-action="reset">
+                             Återställ filter
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="medium-12 large-9 columns kk_aj_productlistblock">   
-            
-
-            <div class="kk_aj_productlist">
+             <div class="kk_aj_productlist">
                 <div class="row kk_aj_arritem konstform_1">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                         <a href="#" class="kk_aj_arr_item_thumbnail_img">
                             <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/dscf2239_h_0.jpg" alt="">
                         </a>
                     </div>
-                    <div class="medium-9 columns ">
+                    <div class="small-9 columns ">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Vem kan du älska?</h2>
                                     <h3>Det handlar om heder. En tät berättelse om längtan efter frihet, syskonkärlek, svek och lojalitet.</h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Teater Tropos</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Dans</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 13-16 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Teater Tropos</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Dans</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 13-16 år</h4></div>
                             <p class="like">5 Likes</p><p class="like">8 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem konstform_3">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/gatsten2_h_0.jpg" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Fågelskrämman</h2>
                                     <h3>Underrubrik som kan vara ganska lång</h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Konst, from, design, Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 10-12 år</h4></div>
                             <p class="like">3 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem konstform_2">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/kiv_h_0.jpg" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Fågelskrämman</h2>
                                     <h3>Underrubrik som kan vara ganska lång</h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Konst, from, design, Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 10-12 år</h4></div>
                             <p class="like">15 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem konstform_3">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/pressbildweb_h_0.jpg" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Fågelskrämman</h2>
                                     <h3>Underrubrik som kan vara ganska lång</h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Konst, from, design, Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 10-12 år</h4></div>
                             <p class="like">1 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem konstform_2">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/imgp0139_h_0.jpg?itok=jDcDC3fe" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Fågelskrämman</h2>
                                     <h3>Underrubrik som kan vara ganska lång</h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Konst, from, design, Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 10-12 år</h4></div>
                             <p class="like">5 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem konstform_1">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/barnhem_h_0.jpg" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Fågelskrämman</h2>
                                     <h3>Underrubrik som kan vara ganska lång</h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 0-10 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Konst, from, design, Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 0-10 år</h4></div>
                             <p class="like">5 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem konstform_4">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/foto_h.jpg?itok=nCH_L9WY" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Jag är ett barnhemsbarn</h2>
                                     <h3></h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>larssons och ADAS teater</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 15-18 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>larssons och ADAS teater</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 15-18 år</h4></div>
                             <p class="like">25 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem konstform_5">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/promo_h_0.jpg" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">BARDO</h2>
                                     <h3>Ett språkligt och musikaliskt möte mellan olika föreställningsvärldar.</h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Teater Trixter</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 16-19 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Teater Trixter</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Konst, from, design, Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 16-19 år</h4></div>
                             <p class="like">23 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem konstform_1">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/foto_h.jpg?itok=nCH_L9WY" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Dockteaterverkstad</h2>
                                     <h3></h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Konst, from, design, Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 10-12 år</h4></div>
                             <p class="like">45 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem konstform_4">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/bardo3_h.jpg" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Othello</h2>
                                     <h3>Vem är bärare av sanningen? Hur sann är den kollektiva sanningen? Hur blir en lögn en vedertagen sanning?</h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Konst, from, design, Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 10-12 år</h4></div>
                             <p class="like">5 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem 5">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/15_h_0.jpg" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Henrik den femte</h2>
                                     <h3>En föreställning om krig, kärlek och den svåra konsten att spela boule.</h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Konst, from, design, Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 10-12 år</h4></div>
                             <p class="like">8 Likes</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row kk_aj_arritem konstform_3">
-                    <div class="medium-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="small-3 columns kk_aj_arr_item_thumbnail">
                             <a href="#" class="kk_aj_arr_item_thumbnail_img">
                                 <img src="http://www.kulturivast.se/sites/default/files/styles/mozaik/public/dockverkstad9_h_0.jpg" alt="">
                             </a>
                         </div>
-                    <div class="medium-9 columns">
+                    <div class="small-9 columns">
                         <div class="row">
-                            <div class="kk_aj_arr_item_contentblock medium-8 columns">
+                            <div class="kk_aj_arr_item_contentblock small-12  medium-8 columns">
                                 <a href="#">
                                     <h2 class="kk_aj_title">Malte Knapp - Cirkus</h2>
                                     <h3>Malte Knapp - Cirkus</h3>
                                 </a>
                             </div>
-                            <div class="kk_aj_arr_item_buttonblock medium-4 columns">
+                            <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
                                 <div class=""></div>
                                 <a class="button right small round ">Läs mer</a>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="kk_aj_arr_item_Utovare medium-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
-                            <div class="kk_aj_arr_item_konstform medium-4 columns"><h4>Konst, from, design, Teater</h4></div>
-                            <div class="kk_aj_arr_item_age medium-4 columns age"><h4>Ålder 10-12 år</h4></div>
+                            <div class="kk_aj_arr_item_Utovare small-4 columns"><h4>Malte Knapp - Cirkus</h4></div>
+                            <div class="kk_aj_arr_item_konstform small-4 columns"><h4>Konst, from, design, Teater</h4></div>
+                            <div class="kk_aj_arr_item_age small-4 columns age"><h4>Ålder 10-12 år</h4></div>
                             <p class="like">9 Likes</p>
                         </div>
                     </div>
