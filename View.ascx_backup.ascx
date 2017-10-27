@@ -1,4 +1,4 @@
-﻿<%@ Control Language="vb" AutoEventWireup="true" CodeBehind="View.ascx.vb" Inherits="kulturkatalogenadmin.aj.Dnn_module_kk_aj_Publik_productlist.View" %>
+﻿<%@ Control Language="vb" AutoEventWireup="true" CodeBehind="View.ascx_backup.ascx.vb" Inherits="kulturkatalogenadmin.aj.Dnn_module_kk_aj_Publik_productlist.View" %>
 
 <!-- Main search -->
 <div class="small-12 columns kk_aj_superProductListBlock">
@@ -162,7 +162,16 @@
 
                 <!-- reset button -->
                 <button type="button" class="button round secondary kk_aj_searchRensaformbutton">Nollställ sökning</button>
-                
+                <%--<span class="jplist-panel jplist-panel-small">
+                  <button 
+                     type="button" 
+                     class="jplist-reset-btn button round secondary kk_aj_searchRensaformbutton"
+                     data-control-type="reset" 
+                     data-control-name="reset" 
+                     data-control-action="reset">
+                     Nollställ sökning
+                  </button>
+               </span>--%>
             </div>
         </div>
     </div>
@@ -178,77 +187,108 @@
        
         <div class="small-12 large-3 columns kk_aj_filterblock jplist-panel" > 
             <div class="jplist-ios-button">	
-            <i class="fa fa-sort-desc" aria-hidden="true"></i>	            
-		        Filter
-	        </div>
-            
-            <div class="row">
-                <div class="small-12 columns ">
-                    <fieldset>
-                       <legend>Filtrera konstform</legend>       
+                <i class="fa fa-sort-desc" aria-hidden="true"></i>	            
+		            Filter
+	            </div>
+            <div class="">
+                <div class="row">
+                    <div class="small-12 columns ">
                        <select 
-                            class="jplist-select" 
-                            data-control-type="filter-select" 
-                            data-control-name="category-filter" 
-                            data-control-action="filter">       
+                         class="jplist-select" 
+                         data-control-type="filter-select" 
+                         data-control-name="category-filter" 
+                         data-control-action="filter">       
          
-                            <option data-path="default">Visa alla</option>
-                            <option data-path=".konstform_1">Konst, from, design</option>
-                            <option data-path=".konstform_2">Teater</option>
-                            <option data-path=".konstform_3">Film</option>
-                            <option data-path=".konstform_4">Dans</option>
-                            <option data-path=".konstform_5">Slöjd</option>								
-                        </select>
-                    </fieldset>
+                           <option data-path="default">Visa alla</option>
+                           <option data-path=".konstform_1">Konst, from, design</option>
+                           <option data-path=".konstform_2">Teater</option>
+                           <option data-path=".konstform_3">Film</option>
+                           <option data-path=".konstform_4">Dans</option>
+                           <option data-path=".konstform_5">Slöjd</option>								
+                      </select>
+                    </div>
                 </div>
-            </div>
-                              
-
-
-            <div class="row">
-                <div class="small-12 columns kk_aj_searchfilterblock ">
-                    <fieldset>
-                        <legend>Datum</legend>         
-                        <div 
-                            class="jplist-drop-down" 
-                            data-control-type="sort-drop-down" 
-                            data-control-name="sort" 
-                            data-control-action="sort"
-                            data-datetime-format="{month}/{day}/{year}"> <!-- {year}, {month}, {day}, {hour}, {min}, {sec} -->
-         
-                                <ul>
-                                <li><span data-path="default">Datum</span></li>
-                                <li><span data-path=".kk_aj_title" data-order="asc" data-type="text">Rubrik A-Ö</span></li>
-                                <li><span data-path=".kk_aj_title" data-order="desc" data-type="text">Rubrik Ö-A</span></li>                                
-                                </ul>
-                        </div>
-                    </fieldset>                      
-                </div>
-            </div>
                 
-            <div class="row">
-                <div class="small-12 columns ">
-                    <div class="resetbox">
-                        <a href="#" type="button" 
-                                class="jplist-reset-btn button secondary "
-                                data-control-type="reset" 
-                                data-control-name="reset" 
-                                data-control-action="reset">
-                                Återställ filter
+                <%--<div class="row">
+                    <div class="small-12 medium-9 columns">
+                        <div class="range-slider" data-slider data-options="display_selector: #sliderOutput3;">
+                            <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                            <span class="range-slider-active-segment"></span>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-3 columns">
+                        <span id="sliderOutput3"></span>
+                    </div>
+                    
+                </div>--%>
+
+
+                <div class="row">
+                    <div class="small-12 columns kk_aj_searchfilterblock ">
+                       <%-- <div class="jplist-panel">--%>
+              <div 
+                 class="jplist-drop-down" 
+                 data-control-type="sort-drop-down" 
+                 data-control-name="sort" 
+                 data-control-action="sort"
+                 data-datetime-format="{month}/{day}/{year}"> <!-- {year}, {month}, {day}, {hour}, {min}, {sec} -->
+         
+                 <ul>
+                    <li><span data-path="default">Sort by</span></li>
+                    <li><span data-path=".kk_aj_title" data-order="asc" data-type="text">Title A-Z</span></li>
+                    <li><span data-path=".kk_aj_title" data-order="desc" data-type="text">Title Z-A</span></li>
+                    <li><span data-path=".desc" data-order="asc" data-type="text">Description A-Z</span></li>
+                    <li><span data-path=".desc" data-order="desc" data-type="text">Description Z-A</span></li>
+                    <li><span data-path=".like" data-order="asc" data-type="number" data-default="true">Likes asc</span></li>
+                    <li><span data-path=".like" data-order="desc" data-type="number">Likes desc</span></li>
+                    <li><span data-path=".date" data-order="asc" data-type="datetime">Date asc</span></li>
+                    <li><span data-path=".date" data-order="desc" data-type="datetime">Date desc</span></li>
+                 </ul>
+              <%--</div>	--%>	
+            </div>
+                       <%-- <div 
+                             class="jplist-range-slider"
+                             data-control-type="range-slider" 
+                             data-control-name="range-slider-likes" 
+                             data-control-action="filter"
+                             data-path=".like"
+                             data-slider-func="likesSlider" 
+                             data-setvalues-func="likesValues">
+                        
+                            
+                             <div class="ui-slider" data-type="ui-slider"></div> 
+                            <div class="yearbox">
+                             <div class="value kk_aj_yearslider kk_aj_prev" data-type="prev-value"></div>
+                             <div class="value kk_aj_yearslider kk_aj_next" data-type="next-value"></div>
+                            </div>
+                          </div>	--%>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="small-12 columns ">
+                        <a type="button" 
+                             class="jplist-reset-btn button secondary "
+                             data-control-type="reset" 
+                             data-control-name="reset" 
+                             data-control-action="reset">
+                             Återställ filter
                         </a>
                     </div>
                 </div>
             </div>
-            
         </div>
 
-        <div class="medium-12 large-9 columns kk_aj_productlistblock">              		
+        <div class="medium-12 large-9 columns kk_aj_productlistblock">   
+           		 <!-- sort dropdown -->
+            
+         
             <div id="kk_aj_productlist" class="kk_aj_productlist">
                 
             </div>  
             <div class="jplist-no-results">
-              <p>Det finns inget att visa</p>
-            </div>
+              <p>No results found</p>
+           </div>
             <!-- START paginering nummer block -->
             <div class="row kk_aj_productPagerblock">                
                 <div class="small-12 columns">
@@ -258,7 +298,7 @@
                              data-control-type="pagination" 
                              data-control-name="paging" 
                              data-control-action="paging"
-                             data-control-animate-to-top="false"
+                            data-control-animate-to-top="false"
                              data-items-per-page="5">
                         </div>
                     </div>

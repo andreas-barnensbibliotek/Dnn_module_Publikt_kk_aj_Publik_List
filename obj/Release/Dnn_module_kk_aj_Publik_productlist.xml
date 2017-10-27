@@ -128,6 +128,33 @@ Dnn_module_kk_aj_Publik_productlist
  
  </summary>
 </member>
+<member name="F:kulturkatalogenadmin.aj.Dnn_module_kk_aj_Publik_productlist.View._kk_aj_CurrentUserid">
+<summary>
+kk_aj_CurrentUserid control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:kulturkatalogenadmin.aj.Dnn_module_kk_aj_Publik_productlist.View._kk_aj_CurrentRollid">
+<summary>
+kk_aj_CurrentRollid control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:kulturkatalogenadmin.aj.Dnn_module_kk_aj_Publik_productlist.View._kk_aj_CurrentPageType">
+<summary>
+kk_aj_CurrentPageType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
 <member name="M:kulturkatalogenadmin.aj.Dnn_module_kk_aj_Publik_productlist.View.Page_Load(System.Object,System.EventArgs)">
  -----------------------------------------------------------------------------
  <summary>
