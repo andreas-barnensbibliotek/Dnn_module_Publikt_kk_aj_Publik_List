@@ -34,117 +34,127 @@
             </div>
 
             
-            <div class="medium-4 columns searchformblock">
+            <div class="large-4 columns searchformblock">
                 <fieldset class="arrpublik">
                     <legend>Välj Arrangemangstyper</legend>
                     <ul class="button-group even-2 ArrangemangtypBlock">
-                        <li>                           
-                            <label>
-                                <input id="val_Fortbildningar" type="radio" name="arr_radioValArrangemang" value="1" />
-                                <span class="button round small secondary">Fortbildningar</span>
-                            </label>
-                        <li>
-                            <label>
-                                <input id="val_Resmalsbesok" type="radio" name="arr_radioValArrangemang" value="1" />
-                                <span class="button round small secondary">Resmålsbesök</span>
-                            </label>                            
-                        </li>
                         <li>
                             <label>
                                 <input id="val_Forestallning" type="radio" name="arr_radioValArrangemang" value="1" />
-                                <span class="button round small secondary">Föreställning</span>
+                                <span class="button round small secondary">Föreställning på tuné</span>
                             </label>     
                         </li>
                         <li>
                             <label>
-                                <input id="val_Skolbio" type="radio" name="arr_radioValArrangemang" value="1" />
-                                <span class="button round small secondary">Skolbio</span>
-                            </label>   
+                                <input id="val_Kulturpedagogiskaprojekt" type="radio" name="arr_radioValArrangemang" value="4" />
+                                <span class="button round small secondary">Kulturpedagogiska projekt</span>
+                            </label> 
+                        </li>
+                        <li>                           
+                            <label>
+                                <input id="val_Fortbildningar" type="radio" name="arr_radioValArrangemang" value="5" />
+                                <span class="button round small secondary">Fortbildningar</span>
+                            </label>
                         </li>
                         <li>
                             <label>
-                                <input id="val_Forfattarbesok" type="radio" name="arr_radioValArrangemang" value="1" />
-                                <span class="button round small secondary">Författarbesök</span>
-                            </label> 
+                                <input id="val_Resmalsbesok" type="radio" name="arr_radioValArrangemang" value="7" />
+                                <span class="button round small secondary">Resmålsbesök</span>
+                            </label>                            
                         </li>
-                        <li><label>
-                                <input id="val_Kulturpedagogiskaprojekt" type="radio" name="arr_radioValArrangemang" value="1" />
-                                <span class="button round small secondary">Kulturpedagogiska projekt</span>
-                            </label> 
+                        
+                        <li>
+                            <label>
+                                <input id="val_Skolbio" type="radio" name="arr_radioValArrangemang" value="8" />
+                                <span class="button round small secondary">Skolbio</span>
+                            </label>   
                         </li>                        
+                                                
                     </ul>
                 </fieldset>
             </div>
-            <div class="medium-4 columns searchformblock">
+            <div class="large-4 columns searchformblock">
                 <fieldset class="arralder">
                     <legend>Välj ålder</legend>
                     <label for="kk_aj_yearspan">Ålder:</label>
                     <div id="kk_aj_slider-range"></div>
-                    <div id="kk_aj_yearspan"></div>
+                    <div id="kk_aj_yearspan" rel="0" rev="0"></div>
                 </fieldset>
             </div>
-            <div class="medium-4 columns searchformblock">
+            <div class="large-4 columns searchformblock">
                 <fieldset class="arrkonstform">
                     <legend>Välj konstform</legend>
                     <ul class="button-group even-2 kontformBlock">
                         <li>
                             <label>
-                                <input id="val_arkitektur" type="radio" name="arr_radioValkontstform" value="1" />
+                                <input id="val_annanScenkonst" type="radio" name="arr_radioValkontstform" value="12" />
                                 <span class="button round small secondary">Annan scenkonst</span>
 
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input id="val_dans" type="radio" name="arr_radioValkontstform" value="2" />
+                                <input id="val_arkitektur" type="radio" name="arr_radioValkontstform" value="1" />
                                 <span class="button round small secondary">Arkitektur & design</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input id="val_film" type="radio" name="arr_radioValkontstform" value="3" />
+                                <input id="val_dans" type="radio" name="arr_radioValkontstform" value="2" />
                                 <span class="button round small secondary">Dans</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input id="val_konst" type="radio" name="arr_radioValkontstform" value="4" />
+                                <input id="val_film" type="radio" name="arr_radioValkontstform" value="3" />
                                 <span class="button round small secondary">Film & media</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input id="val_litteratur" type="radio" name="arr_radioValkontstform" value="5" />
+                                <input id="val_formDesign" type="radio" name="arr_radioValkontstform" value="4" />
                                 <span class="button round small secondary">Konst, form & design</span>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <input id="val_musik" type="radio" name="arr_radioValkontstform" value="6" />
+                                <input id="val_litteraturberattande" type="radio" name="arr_radioValkontstform" value="5" />
                                 <span class="button round small secondary">Litteratur, berättande & skrivande</span>
                             </label>
                         </li>
                         <li>
                             <label>
+                                <input id="val_musik" type="radio" name="arr_radioValkontstform" value="6" />
+                                <span class="button round small secondary">Musik</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
                                 <input id="val_naturochkultruarv" type="radio" name="arr_radioValkontstform" value="7" />
-                                <span class="button round small secondary">Nycirkus/cirkus</span>
+                                <span class="button round small secondary">Natur- och  kulturarv</span>
                             </label>
                         </li>
                         <li>
                             <label>
                                 <input id="val_nycirkus" type="radio" name="arr_radioValkontstform" value="8" />
-                                <span class="button round small secondary">Slöjd</span>
+                                <span class="button round small secondary">Nycirkus/cirkus</span>
                             </label>
                         </li>
                         <li>
                             <label>
                                 <input id="val_slojd" type="radio" name="arr_radioValkontstform" value="9" />
-                                <span class="button round small secondary">Teater</span>
+                                <span class="button round small secondary">Slöjd</span>
                             </label>
                         </li>
                         <li>
                             <label>
                                 <input id="val_teater" type="radio" name="arr_radioValkontstform" value="10" />
+                                <span class="button round small secondary">Teater</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input id="val_teknik" type="radio" name="arr_radioValkontstform" value="11" />
                                 <span class="button round small secondary">Teknik & multimedia</span>
                             </label>
                         </li>                        
@@ -243,11 +253,43 @@
         </div>
 
         <div class="medium-12 large-9 columns kk_aj_productlistblock">              		
-            <div id="kk_aj_productlist" class="kk_aj_productlist">
-                
+            <div id="kk_aj_productlist" class="kk_aj_productlist">               
+                <img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/ajax-loader.gif" />
             </div>  
             <div class="jplist-no-results">
-              <p>Det finns inget att visa</p>
+              
+                <div class="row kk_aj_arritem" rel="">
+                  <div class="small-3 columns kk_aj_arr_item_thumbnail">
+                    <div class="row kk_aj_arr_item_thumbnail_color">
+                      <div class="small-12">
+                        <a href="#" class="kk_aj_arr_item_thumbnail_img">
+                          <img src="/Portals/0/kulturkatalogenArrImages/noresults.jpg"
+                          alt="Det finns inget att visa" />
+                        </a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="small-12">                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="small-9 columns">
+                    <div class="row">
+                      <div class="kk_aj_arr_item_contentblock small-12 medium-8 columns">
+                        <a href="#">
+                          <h2 class="kk_aj_title">Det finns inget att visa</h2>
+                          <h3></h3>
+                        </a>
+                      </div>
+                      <div class="kk_aj_arr_item_buttonblock small-12 medium-4 columns">
+                        <div class="row">
+                          <div class="small-12">
+                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
             </div>
             <!-- START paginering nummer block -->
             <div class="row kk_aj_productPagerblock">                
