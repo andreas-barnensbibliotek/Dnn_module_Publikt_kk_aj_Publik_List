@@ -254,7 +254,7 @@
 
         <div class="medium-12 large-9 columns kk_aj_productlistblock">              		
             <div id="kk_aj_productlist" class="kk_aj_productlist">               
-                <img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/ajax-loader.gif" />
+                <img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" />
             </div>  
             <div class="jplist-no-results">
               
@@ -289,7 +289,8 @@
                         </div>
                       </div>
                     </div>
-
+                  </div>
+                </div>
             </div>
             <!-- START paginering nummer block -->
             <div class="row kk_aj_productPagerblock">                
@@ -311,6 +312,7 @@
       
     </div>
 </div>
+    
 <div id="kk_aj_conf" style="">
     
     <span id="kk_aj_CurrentUserid" class="kk_aj_CurrentUserid" runat="server"></span>
