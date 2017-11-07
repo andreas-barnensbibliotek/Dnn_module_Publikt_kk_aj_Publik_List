@@ -8,14 +8,16 @@
         <!-- use button tag for on page actions -->
         <div class="small-12 medium-8 text-center small-centered  columns kk_aj_searchHeader" >
             <h1>Kulturkatalogen Väst</h1>
-            <p>Kulturkatalogen väst är Västra Götalandsregionen gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.</p>
-            <p>Hitta artister och konstnärer som går att engagera till <br />skolor, bibiliotek. fitidsgårdar och föreningar</p>
+            <p>Kulturkatalogen Väst är Västra Götalandsregionens gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.</p>
+            <p>Hitta artister och konstnärer som går att engagera till <br />skolor, bibiliotek, fitidsgårdar och föreningar.</p>
+            <audio preload id="audio1" src="http://barnensbibliotek.se/portals/0/ljud/905010568X.mp3" controls="controls">Your browser does not support HTML5 Audio!</audio>
+            <audio src="http://barnensbibliotek.se/portals/0/ljud/905010568X.mp3" preload="auto" />
         </div>       
         <div class="small-12 medium-6 small-centered columns " >
                
             <div class="row collapse postfix-radius">
                 <div class="small-10 columns">
-                    <input type="text" id="kk_aj_freetextSearch" class="kk_aj_freetextSearch" placeholder="Sök i kulturkatalogen"/>
+                    <input type="text" id="kk_aj_freetextSearch" class="kk_aj_freetextSearch" placeholder="Sök i Kulturkatalogen Väst"/>
                 </div>
                 <div class="small-2 columns">
                     <a href="#" id="kk_aj_btnfreetextSearch" class="kk_aj_btnfreetextSearch button success postfix"><i class="fa fa-search" aria-hidden="true"></i></a>
