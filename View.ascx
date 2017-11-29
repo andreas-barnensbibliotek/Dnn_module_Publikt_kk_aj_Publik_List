@@ -191,7 +191,7 @@
 
             </div>
             <div class="medium-12 large-3 columns">
-                <a class="button tiny info right"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Minneslista</a>
+                <a id="kk_aj_cmd_minneslistan" class="button tiny info right "><i class="fa fa-shopping-basket" aria-hidden="true"></i> Minneslista <span class="cmd_minneslistan"></span></a>
             </div>            
         </div>
     </div>
