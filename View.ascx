@@ -214,11 +214,11 @@
                             data-control-action="filter">       
          
                             <option data-path="default">Arrangörstyp</option>
-                            <option data-path=".S_AR_1">Konst, from, design</option>
-                            <option data-path=".S_AR_2">Teater</option>
-                            <option data-path=".S_AR_3">Film</option>
-                            <option data-path=".S_AR_4">Dans</option>
-                            <option data-path=".S_AR_5">Slöjd</option>								
+                            <option data-path=".S_AR_1">Föreställning på tuné</option>
+                            <option data-path=".S_AR_4">Kulturpedagogiska projekt</option>
+                            <option data-path=".S_AR_5">Fortbildningar</option>
+                            <option data-path=".S_AR_7">Resmålsbesök</option>
+                            <option data-path=".S_AR_8">Skolbio</option>								
                         </select>
                   
                 </div>
@@ -233,7 +233,7 @@
                             data-control-name="category-filter" 
                             data-control-action="filter">       
          
-                            <option data-path="default">Konstform</option>
+                            <option data-path="default">Ytterligare konstform</option>
                             <option data-path=".S_KF_1">Konst, from, design</option>
                             <option data-path=".S_KF_2">Teater</option>
                             <option data-path=".S_KF_3">Film</option>
@@ -263,6 +263,26 @@
                    
                 </div>
             </div>
+            <div class="row">
+                <div class="small-12 columns spellangdblock">
+                    <h4>Kostnad</h4> 
+                       <div 
+                         class="jplist-range-slider"
+                         data-control-type="range-slider" 
+                         data-control-name="range-slider-kostnad" 
+                         data-control-action="filter"
+                         data-path=".S_KO"
+                         data-slider-func="kostnadSlider" 
+                         data-setvalues-func="kostnadValues">
+                                                 
+                         <div class="ui-slider" data-type="ui-slider"></div>
+                         <div class="value left" data-type="prev-value"></div>
+                         <div class="value right" data-type="next-value"></div>
+                      </div>
+                   
+                </div>
+            </div>
+
             <div class="row">
                 <div class="small-12 columns spellangdblock">
                     <h4>Spellängd</h4> 
