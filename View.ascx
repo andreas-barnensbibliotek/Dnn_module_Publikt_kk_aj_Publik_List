@@ -45,7 +45,7 @@
                         </li>
                         <li>
                             <label>                                
-                                <a id="val_Kulturpedagogiskaprojekt" rel="4" class="button round small secondary">Kulturpedagogiska projekt</a>
+                                <a id="val_Kulturpedagogiskaprojekt" rel="4" class="button round small secondary">Workshops/Projekt </a>
                             </label> 
                         </li>
                         <li>                           
@@ -215,7 +215,7 @@
          
                             <option data-path="default">Arrangörstyp</option>
                             <option data-path=".S_AR_1">Föreställning på tuné</option>
-                            <option data-path=".S_AR_4">Kulturpedagogiska projekt</option>
+                            <option data-path=".S_AR_4">Workshops/Projekt</option>
                             <option data-path=".S_AR_5">Fortbildningar</option>
                             <option data-path=".S_AR_7">Resmålsbesök</option>
                             <option data-path=".S_AR_8">Skolbio</option>								
