@@ -9,7 +9,7 @@
         <div class="small-12 large-8 text-center small-centered  columns kk_aj_searchHeader" >
             <h1>Kulturkatalogen Väst</h1>
             <p>Kulturkatalogen Väst är Västra Götalandsregionens gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.</p>
-            <p>Hitta artister och konstnärer som går att engagera till <br />skolor, bibliotek, fritidsgårdar och föreningar.</p>            
+            <p>Hitta artister och konstnärer som går att engagera till <br />skolor, bibiliotek, fitidsgårdar och föreningar.</p>            
         </div>       
         <div class="small-12 medium-8 large-6 small-centered columns " >
                
@@ -36,35 +36,35 @@
             
             <div class="large-4 columns searchformblock">
                 <fieldset class="arrpublik">
-                    <legend>Välj arrangemangstyper</legend>
+                    <legend>Välj Arrangemangstyper</legend>
                     <ul class="button-group even-2 ArrangemangtypBlock">
                         <li>
                             <label>
-                                <a id="val_Resmalsbesok" rel="7" class="button round small secondary">Besöksmål med resestöd</a>
-                            </label>                            
+                                <a id="val_Forestallning" rel="1" class="button round small secondary">Föreställning på tuné</a>
+                            </label>     
+                        </li>
+                        <li>
+                            <label>                                
+                                <a id="val_Kulturpedagogiskaprojekt" rel="4" class="button round small secondary">Workshops/Projekt </a>
+                            </label> 
+                        </li>
+                        <li>                           
+                            <label>
+                                <a id="val_Fortbildningar" rel="5" class="button round small secondary">Fortbildningar</a>
+                            </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_Forestallning" rel="1" class="button round small secondary">Föreställning på turné</a>
-                            </label>     
+                                <a id="val_Resmalsbesok" rel="7" class="button round small secondary">Resmålsbesök</a>
+                            </label>                            
                         </li>
-                       
-                        <li>                           
-                            <label>
-                                <a id="val_Fortbildningar" rel="5" class="button round small secondary">Kompetensutveckling</a>
-                            </label>
-                        </li>                       
                         
                         <li>
                             <label>
                                 <a id="val_Skolbio" rel="8" class="button round small secondary">Skolbio</a>
                             </label>   
                         </li>                        
-                          <li>
-                            <label>                                
-                                <a id="val_Kulturpedagogiskaprojekt" rel="4" class="button round small secondary">Workshops/Projekt</a>
-                            </label> 
-                        </li>                       
+                                                
                     </ul>
                 </fieldset>
             </div>
@@ -187,11 +187,11 @@
                             data-control-action="filter">       
          
                             <option data-path="default">Arrangörstyp</option>
-                            <option data-path=".S_AR_7">Besöksmål med resestöd</option>
-                            <option data-path=".S_AR_1">Föreställning på turné</option>                            
-                            <option data-path=".S_AR_5">Kompetensutveckling</option>                            
-                            <option data-path=".S_AR_8">Skolbio</option>			
-                            <option data-path=".S_AR_4">Workshops/Projekt</option>					
+                            <option data-path=".S_AR_1">Föreställning på tuné</option>
+                            <option data-path=".S_AR_4">Workshops/Projekt</option>
+                            <option data-path=".S_AR_5">Fortbildningar</option>
+                            <option data-path=".S_AR_7">Resmålsbesök</option>
+                            <option data-path=".S_AR_8">Skolbio</option>								
                         </select>
                   
                 </div>
@@ -207,18 +207,11 @@
                             data-control-action="filter">       
          
                             <option data-path="default">Ytterligare konstform</option>
-                            <option data-path=".S_KF_12">Annan scenkonst</option>
-                            <option data-path=".S_KF_1">Arkitektur & design</option>
-                            <option data-path=".S_KF_2">Dans</option>
-                            <option data-path=".S_KF_3">Film & media</option>
-                            <option data-path=".S_KF_4">Konst, form & design</option>
-                            <option data-path=".S_KF_5">Litteratur, berättande & skrivande</option>
-                            <option data-path=".S_KF_6">Musik</option>
-                            <option data-path=".S_KF_7">Natur- och kulturarv</option>
-                            <option data-path=".S_KF_12">Nycirkus/cirkus</option>                                                      
-                            <option data-path=".S_KF_9">Slöjd</option>
-                            <option data-path=".S_KF_10">Teater</option>                              
-                            <option data-path=".S_KF_11">Teknik & multimedia</option>                           						
+                            <option data-path=".S_KF_1">Konst, from, design</option>
+                            <option data-path=".S_KF_2">Teater</option>
+                            <option data-path=".S_KF_3">Film</option>
+                            <option data-path=".S_KF_4">Dans</option>
+                            <option data-path=".S_KF_5">Slöjd</option>								
                         </select>
                     
                 </div>
@@ -293,8 +286,8 @@
          
                         <option data-path="default">Mörkläggning</option>
                         <option data-path=".S_ML_1">Nej</option>
-                        <option data-path=".S_ML_2">Ja, helst</option>
-                        <option data-path=".S_ML_3">Ja, nödvändig</option>
+                        <option data-path=".S_ML_2">Ja helst</option>
+                        <option data-path=".S_ML_3">Ja nödvändig</option>
                             								
                     </select>
                    
