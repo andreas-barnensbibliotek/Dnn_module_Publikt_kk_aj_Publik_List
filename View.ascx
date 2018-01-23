@@ -15,9 +15,10 @@
                
             <div class="row collapse postfix-radius">
                 <div class="small-10 columns">
+                    <label for="kk_aj_freetextSearch" style="display:none;">Sök i Kulturkatalogen Väst</label>
                     <input type="text" id="kk_aj_freetextSearch" class="kk_aj_freetextSearch" placeholder="Sök i Kulturkatalogen Väst"/>
                 </div>
-                <div class="small-2 columns">
+                <div class="small-2 columns">                    
                     <a href="#" id="kk_aj_btnfreetextSearch" class="kk_aj_btnfreetextSearch button success postfix"><i class="fa fa-search" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -174,13 +175,13 @@
                 </div>
          
         <div class="small-12 large-3 columns kk_aj_filterblock jplist-panel" > 
-             <h3>Förfina sök</h3> 
-            
+             <h3>Förfina sök</h3>            
 
             <div class="row">
                 <div class="small-12 columns ">
                      
-                       <select 
+                        <label for="Arrangörstypfilter" style="display:none;">Arrangörstypfilter</label>   
+                        <select  id="Arrangörstypfilter" 
                             class="jplist-select" 
                             data-control-type="filter-select" 
                             data-control-name="category-filter" 
@@ -200,7 +201,8 @@
             <div class="row">
                 <div class="small-12 columns ">
                       
-                       <select 
+                     <label for="Ytterligarekonstformfilter" style="display:none;">Ytterligare konstform</label>   
+                        <select  id="Ytterligarekonstformfilter" 
                             class="jplist-select" 
                             data-control-type="filter-select" 
                             data-control-name="category-filter" 
@@ -226,8 +228,8 @@
             
             <div class="row">
                 <div class="small-12 columns ">
-                       
-                    <select 
+                    <label for="Bokningsbarfilter" style="display:none;">Bokningsbar t.o.m.</label>   
+                    <select  id="Bokningsbarfilter"
                         class="jplist-select" 
                         data-control-type="filter-select" 
                         data-control-name="category-filter" 
@@ -285,7 +287,8 @@
             <div class="row">
                 <div class="small-12 columns ">
                         
-                    <select 
+                    <label for="Morkläggningfilter" style="display:none;">Mörkläggning</label>   
+                    <select  id="Morkläggningfilter"
                         class="jplist-select" 
                         data-control-type="filter-select" 
                         data-control-name="category-filter" 
@@ -303,7 +306,8 @@
             <div class="row">
                 <div class="small-12 columns ">
                         
-                    <select 
+                    <label for="Takhojdfilter" style="display:none;">Takhöjd</label>   
+                    <select  id="Takhojdfilter"
                         class="jplist-select" 
                         data-control-type="filter-select" 
                         data-control-name="category-filter" 
@@ -348,7 +352,9 @@
             </div>
             <div class="medium-2 large-2 columns kk_aj_sort ">                        
                     
+                <label for="Sorterafilter" style="display:none;">Sortera</label>   
                 <select 
+                    id="Sorterafilter" 
                     class="jplist-select" 
                     data-control-type="sort-select" 
                     data-control-name="sort" 
@@ -367,7 +373,7 @@
             </div>           
                </div>          		
             <div id="kk_aj_productlist" class="kk_aj_productlist">               
-                <img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" />
+                <img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Ajax-loader. Laddar arrangemangslista" />
             </div>  
             <div class="jplist-no-results">
               
