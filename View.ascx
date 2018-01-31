@@ -16,10 +16,10 @@
             <div class="row collapse postfix-radius">
                 <div class="small-10 columns">
                     <label for="kk_aj_freetextSearch" style="display:none;">Sök i Kulturkatalogen Väst</label>
-                    <input type="text" id="kk_aj_freetextSearch" class="kk_aj_freetextSearch" placeholder="Sök i Kulturkatalogen Väst"/>
+                    <input type="text" id="kk_aj_freetextSearch" name="kk_aj_freetextSearch" class="kk_aj_freetextSearch" placeholder="Sök i Kulturkatalogen Väst" tabindex="1"/>
                 </div>
                 <div class="small-2 columns">                    
-                    <a href="#" id="kk_aj_btnfreetextSearch" class="kk_aj_btnfreetextSearch button success postfix"><i class="fa fa-search" aria-hidden="true"></i></a>
+                    <a href="#" id="kk_aj_btnfreetextSearch" name="kk_aj_btnfreetextSearch" class="kk_aj_btnfreetextSearch button success postfix" tabindex="2"><i class="fa fa-search" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>              
@@ -41,29 +41,29 @@
                     <ul class="button-group even-2 ArrangemangtypBlock">
                         <li>
                             <label>
-                                <a id="val_Resmalsbesok" rel="7" class="button round small secondary">Besöksmål med resestöd</a>
+                                <a id="val_Resmalsbesok" rel="7" class="button round small secondary" tabindex="3">Besöksmål med resestöd</a>
                             </label>                            
                         </li>
                         <li>
                             <label>
-                                <a id="val_Forestallning" rel="1" class="button round small secondary">Föreställning på turné</a>
+                                <a id="val_Forestallning" rel="1" class="button round small secondary" tabindex="4">Föreställning på turné</a>
                             </label>     
                         </li>
                        
-                        <li>                           
+                       <%-- <li>                           
                             <label>
-                                <a id="val_Fortbildningar" rel="5" class="button round small secondary">Kompetensutveckling</a>
+                                <a id="val_Fortbildningar" rel="5" class="button round small secondary" tabindex="5">Kompetensutveckling</a>
                             </label>
-                        </li>                       
+                        </li>      --%>                 
                         
                         <li>
                             <label>
-                                <a id="val_Skolbio" rel="8" class="button round small secondary">Skolbio</a>
+                                <a id="val_Skolbio" rel="8" class="button round small secondary" tabindex="6">Skolbio</a>
                             </label>   
                         </li>                        
                           <li>
                             <label>                                
-                                <a id="val_Kulturpedagogiskaprojekt" rel="4" class="button round small secondary">Workshops/Projekt</a>
+                                <a id="val_Kulturpedagogiskaprojekt" rel="4" class="button round small secondary" tabindex="7">Workshops/Projekt</a>
                             </label> 
                         </li>                       
                     </ul>
@@ -83,63 +83,63 @@
                     <ul class="button-group even-2 kontformBlock">
                         <li>
                             <label>                                
-                                <a id="val_annanScenkonst" rel="12" class="button round small secondary">Annan scenkonst</a>
+                                <a id="val_annanScenkonst" rel="12" class="button round small secondary" tabindex="8">Annan scenkonst</a>
 
                             </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_arkitektur" rel="1" class="button round small secondary">Arkitektur & design</a>
+                                <a id="val_arkitektur" rel="1" class="button round small secondary" tabindex="9">Arkitektur & design</a>
                             </label>
                         </li>
                         <li>
                             <label>                             
-                                <a id="val_dans" rel="2"  class="button round small secondary">Dans</a>
+                                <a id="val_dans" rel="2"  class="button round small secondary" tabindex="10">Dans</a>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_film" rel="3" class="button round small secondary">Film & media</a>
+                                <a id="val_film" rel="3" class="button round small secondary" tabindex="11">Film & media</a>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_formDesign" rel="4" class="button round small secondary">Konst, form & design</a>
+                                <a id="val_formDesign" rel="4" class="button round small secondary" tabindex="12">Konst, form & design</a>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_litteraturberattande" rel="5" class="button round small secondary">Litteratur, berättande & skrivande</a>
+                                <a id="val_litteraturberattande" rel="5" class="button round small secondary" tabindex="13">Litteratur, berättande & skrivande</a>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_musik" rel="6" class="button round small secondary">Musik</a>
+                                <a id="val_musik" rel="6" class="button round small secondary" tabindex="14">Musik</a>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_naturochkultruarv" rel="7" class="button round small secondary">Natur- och  kulturarv</a>
+                                <a id="val_naturochkultruarv" rel="7" class="button round small secondary" tabindex="15">Natur- och  kulturarv</a>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_nycirkus" rel="8" class="button round small secondary">Nycirkus/cirkus</a>
+                                <a id="val_nycirkus" rel="8" class="button round small secondary"tabindex="16">Nycirkus/cirkus</a>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_slojd" rel="9" class="button round small secondary">Slöjd</a>
+                                <a id="val_slojd" rel="9" class="button round small secondary" tabindex="17">Slöjd</a>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_teater" rel="10" class="button round small secondary">Teater</a>
+                                <a id="val_teater" rel="10" class="button round small secondary" tabindex="18">Teater</a>
                             </label>
                         </li>
                         <li>
                             <label>
-                                <a id="val_teknik" rel="11" class="button round small secondary">Teknik & multimedia</a>
+                                <a id="val_teknik" rel="11" class="button round small secondary" tabindex="19">Teknik & multimedia</a>
                             </label>
                         </li>                        
                     </ul>
@@ -152,13 +152,13 @@
             <div class="small-12 text-center columns kk_aj_searchbuttonblock ">
                 <!-- use a tag for links to other locations -->
                 <!-- search button -->
-                <button class="button round success kk_aj_searchformbutton ">Hitta arrangemang</button>                        
+                <button class="button round success kk_aj_searchformbutton " tabindex="20">Hitta arrangemang</button>                        
 
                 <!-- reset button -->
                 
                 <button type="button" class="button round secondary kk_aj_searchRensaformbutton jplist-reset-btn"  data-control-type="reset" 
                                 data-control-name="reset" 
-                                data-control-action="reset">Nollställ sökning</button>
+                                data-control-action="reset" tabindex="21">Nollställ sökning</button>
             </div>
         </div>
     </div>
@@ -190,7 +190,7 @@
                             <option data-path="default">Arrangörstyp</option>
                             <option data-path=".S_AR_7">Besöksmål med resestöd</option>
                             <option data-path=".S_AR_1">Föreställning på turné</option>                            
-                            <option data-path=".S_AR_5">Kompetensutveckling</option>                            
+                            <%--<option data-path=".S_AR_5">Kompetensutveckling</option>  --%>                          
                             <option data-path=".S_AR_8">Skolbio</option>			
                             <option data-path=".S_AR_4">Workshops/Projekt</option>					
                         </select>
@@ -381,7 +381,7 @@
                   <div class="small-3 columns kk_aj_arr_item_thumbnail">
                     <div class="row kk_aj_arr_item_thumbnail_color">
                       <div class="small-12">
-                        <a href="#" class="kk_aj_arr_item_thumbnail_img">
+                        <a href="#" name="arritem_nothingtoshow" class="kk_aj_arr_item_thumbnail_img">
                           <i class="fa fa-times" aria-hidden="true"></i>
 
                         </a>
