@@ -49,18 +49,16 @@
                                 <a id="val_Forestallning" rel="1" class="button round small secondary" tabindex="4">Föreställning på turné</a>
                             </label>     
                         </li>
-                       
-                       <%-- <li>                           
-                            <label>
-                                <a id="val_Fortbildningar" rel="5" class="button round small secondary" tabindex="5">Kompetensutveckling</a>
-                            </label>
-                        </li>      --%>                 
-                        
                         <li>
                             <label>
-                                <a id="val_Skolbio" rel="8" class="button round small secondary" tabindex="6">Skolbio</a>
+                                <a id="val_Skolbio" rel="8" class="button round small secondary" tabindex="5">Skolbio</a>
                             </label>   
-                        </li>                        
+                        </li>    
+                         <li>                           
+                            <label>
+                                <a id="val_Utstallningpaturne" rel="2" class="button round small secondary" tabindex="6">Utställning på turné</a>
+                            </label>
+                        </li>                         
                           <li>
                             <label>                                
                                 <a id="val_Kulturpedagogiskaprojekt" rel="4" class="button round small secondary" tabindex="7">Workshops/Projekt</a>

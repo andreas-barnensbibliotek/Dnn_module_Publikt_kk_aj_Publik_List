@@ -50,11 +50,11 @@
                             </label>     
                         </li>
                        
-                        <li>                           
+                       <%-- <li>                           
                             <label>
                                 <a id="val_Fortbildningar" rel="5" class="button round small secondary" tabindex="5">Kompetensutveckling</a>
                             </label>
-                        </li>                       
+                        </li>      --%>                 
                         
                         <li>
                             <label>
@@ -190,7 +190,7 @@
                             <option data-path="default">Arrangörstyp</option>
                             <option data-path=".S_AR_7">Besöksmål med resestöd</option>
                             <option data-path=".S_AR_1">Föreställning på turné</option>                            
-                            <option data-path=".S_AR_5">Kompetensutveckling</option>                            
+                            <%--<option data-path=".S_AR_5">Kompetensutveckling</option>  --%>                          
                             <option data-path=".S_AR_8">Skolbio</option>			
                             <option data-path=".S_AR_4">Workshops/Projekt</option>					
                         </select>
