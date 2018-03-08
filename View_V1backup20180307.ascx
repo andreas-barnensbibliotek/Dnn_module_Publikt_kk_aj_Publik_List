@@ -1,131 +1,168 @@
 ﻿<%@ Control Language="vb" AutoEventWireup="true" CodeBehind="View.ascx.vb" Inherits="kulturkatalogenadmin.aj.Dnn_module_kk_aj_Publik_productlist.View" %>
 
 <!-- Main search -->
-    <div class="small-12 columns kk_aj_superProductListBlock">
-        <div class="row kk_aj_mainLogoheaderblock">
+<div class="small-12 columns kk_aj_superProductListBlock">
+    <div class="row kk_aj_mainFreetextSearchblock">
         
-            <!-- use a tag for links to other locations -->
-            <!-- use button tag for on page actions -->
-            <div class="small-12  columns kk_aj_searchHeader" >
-                <h1>Kulturkatalogen Väst</h1>
-            
-                <div class="small-6 columns">
-
-                    <ul id="pagemenyblock">
-                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Hitta arrangemang</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Textsök</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Sök igenom kategori</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Allt om Kulturkatalogen Väst</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Kontaktpersoner</a></li>
-                    </ul>
+        <!-- use a tag for links to other locations -->
+        <!-- use button tag for on page actions -->
+        <div class="small-12 large-8 text-center small-centered  columns kk_aj_searchHeader" >
+            <h1>Kulturkatalogen Väst</h1>
+            <p>Kulturkatalogen Väst är Västra Götalandsregionens gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.</p>
+            <p>Hitta artister och konstnärer som går att engagera till <br />skolor, bibliotek, fritidsgårdar och föreningar.</p>            
+        </div>       
+        <div class="small-12 medium-8 large-6 small-centered columns " >
+               
+            <div class="row collapse postfix-radius">
+                <div class="small-10 columns">
+                    <label for="kk_aj_freetextSearch" style="display:none;">Sök i Kulturkatalogen Väst</label>
+                    <input type="text" id="kk_aj_freetextSearch" name="kk_aj_freetextSearch" class="kk_aj_freetextSearch" placeholder="Sök i Kulturkatalogen Väst" tabindex="1"/>
                 </div>
-            </div>       
-       
-        </div>
-    </div>
-
-    <div class="small-12 columns kk_aj_mainInfotextblock">   
-        <div class="row ">
-        
-            <!-- use a tag for links to other locations -->
-            <!-- use button tag for on page actions -->
-            <div class="small-12 large-8 columns" >
-                <h2>Hitta arrangemang</h2>  
-                <p>Kulturkatalogen Väst är Västra Götalandsregionens gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.
-                Hitta artister och konstnärer som går att engagera till skolor, bibliotek, fritidsgårdar och föreningar.</p>                     
-            </div>       
-        
-        </div>
-    </div>
-    
-    <div class="small-12 columns kk_aj_mainFreetextSearchblock">
-        <div class="row ">             
-        <div class="small-12 columns " >
-               <h2>Textsök i Kulturkatalogen Väst...</h2>
-            <div class="row collapse ">
-                <div class="small-8 columns">
-                    
-                    <label for="kk_aj_freetextSearch" style="display:none;">Textsök i Kulturkatalogen Väst...</label>
-                    <input type="text" id="kk_aj_freetextSearch" name="kk_aj_freetextSearch" style="width:100%;" class=""  tabindex="1"/>
-                </div>
-                <div class="small-4 columns text-center">                    
-                    <a href="#" id="kk_aj_btnfreetextSearch" name="kk_aj_btnfreetextSearch" class="button tiny round" tabindex="2" >HITTA ARRANGEMANG</a>
+                <div class="small-2 columns">                    
+                    <a href="#" id="kk_aj_btnfreetextSearch" name="kk_aj_btnfreetextSearch" class="kk_aj_btnfreetextSearch button success postfix" tabindex="2"><i class="fa fa-search" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>              
     </div>
-    </div>
-     <div class="small-12 columns kk_aj_mainsearchblock">
-        <div class="row kk_aj_mainsearchblock">
-                   <div class="small-12 columns " >
-               <h2>...eller sök genom kategori</h2>
-                       </div>
-            <div class="large-4 columns ">                    
-                <h3>Välj arrangemangstyper</h3>     
-                <div class="ArrangemangtypBlock">                        
-                    <a id="val_alla" rel="0" class="searchformbutton vald" tabindex="3">Alla</a>
-                    <a id="val_Resmalsbesok" rel="7" class="searchformbutton" tabindex="3">Besöksmål med resestöd</a>
-                    <a id="val_Forestallning" rel="1" class="searchformbutton" tabindex="4">Föreställning på turné</a>
-                    <a id="val_Skolbio" rel="8" class="searchformbutton" tabindex="5">Skolbio</a>
-                    <a id="val_Utstallningpaturne" rel="2" class="searchformbutton" tabindex="6">Utställning på turné</a>
-                    <a id="val_Kulturpedagogiskaprojekt" rel="4" class="searchformbutton" tabindex="7">Workshops/Projekt</a>
-                </div>
+
+
+    <div class="row kk_aj_mainsearchblock">
+        <div class="small-12 columns">
+            <!-- use a tag for links to other locations -->
+            <!-- use button tag for on page actions -->
+            <div class="small-12 text-center columns kk_aj_coloredblocks" >
+                <h2>Hitta arrangemang</h2>
             </div>
+
             
-            <div class="large-7 large-offset-1 columns" >
-                <div class="large-12 columns "> <h3>Välj konstform</h3></div>
-                <div class="large-6 columns ">                       
-                    <div class="kontformBlock">
-                        <a id="val_alla" rel="0" class="searchformbutton vald" tabindex="3">Alla</a>
-                        <a id="val_Resmalsbesok" rel="7" class="searchformbutton" tabindex="3">Besöksmål med resestöd</a>
-                        <a id="val_Forestallning" rel="1" class="searchformbutton" tabindex="4">Föreställning på turné</a>
-                        <a id="val_Skolbio" rel="8" class="searchformbutton" tabindex="5">Skolbio</a>
-                        <a id="val_Utstallningpaturne" rel="2" class="searchformbutton" tabindex="6">Utställning på turné</a>
-                        <a id="val_Kulturpedagogiskaprojekt" rel="4" class="searchformbutton" tabindex="7">Workshops/Projekt</a>
-                        <a id="val_Kulturpedagogiskaprojekt" rel="4" class="searchformbutton" tabindex="7">Workshops/Projekt</a>
-                    </div>
-                </div>
-                <div class="large-6 columns">                          
-                    <div class="kontformBlock">
-                        <a id="val_alla" rel="0" class="searchformbutton" tabindex="3">Alla</a>
-                        <a id="val_Resmalsbesok" rel="7" class="searchformbutton" tabindex="3">Besöksmål med resestöd</a>
-                        <a id="val_Forestallning" rel="1" class="searchformbutton" tabindex="4">Föreställning på turné</a>
-                        <a id="val_Skolbio" rel="8" class="searchformbutton" tabindex="5">Skolbio</a>
-                        <a id="val_Utstallningpaturne" rel="2" class="searchformbutton" tabindex="6">Utställning på turné</a>
-                        <a id="val_Kulturpedagogiskaprojekt" rel="4" class="searchformbutton" tabindex="7">Workshops/Projekt</a>
-                    </div>
-                </div>
-            </div>    
-        
-        <div class="large-12 columns ">
-            <h3>Välj åldersintervall</h3>
-            <label for="kk_aj_yearspan2" style="display:none;">Ålder:</label>
-            <div id="kk_aj_slider-range2"></div>
-            <div id="kk_aj_yearspan2" rel="0" rev="0"></div>            
+            <div class="large-4 columns searchformblock">
+                <fieldset class="arrpublik">
+                    <legend>Välj arrangemangstyper</legend>
+                    <ul class="button-group even-2 ArrangemangtypBlock">
+                        <li>
+                            <label>
+                                <a id="val_Resmalsbesok" rel="7" class="button round small secondary" tabindex="3">Besöksmål med resestöd</a>
+                            </label>                            
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_Forestallning" rel="1" class="button round small secondary" tabindex="4">Föreställning på turné</a>
+                            </label>     
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_Skolbio" rel="8" class="button round small secondary" tabindex="5">Skolbio</a>
+                            </label>   
+                        </li>    
+                         <li>                           
+                            <label>
+                                <a id="val_Utstallningpaturne" rel="2" class="button round small secondary" tabindex="6">Utställning på turné</a>
+                            </label>
+                        </li>                         
+                          <li>
+                            <label>                                
+                                <a id="val_Kulturpedagogiskaprojekt" rel="4" class="button round small secondary" tabindex="7">Workshops/Projekt</a>
+                            </label> 
+                        </li>                       
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="large-4 columns searchformblock">
+                <fieldset class="arralder">
+                    <legend>Välj ålder</legend>
+                    <label for="kk_aj_yearspan2">Ålder:</label>
+                    <div id="kk_aj_slider-range2"></div>
+                    <div id="kk_aj_yearspan2" rel="0" rev="0"></div>
+                </fieldset>
+            </div>
+            <div class="large-4 columns searchformblock">
+                <fieldset class="arrkonstform">
+                    <legend>Välj konstform</legend>
+                    <ul class="button-group even-2 kontformBlock">
+                        <li>
+                            <label>                                
+                                <a id="val_annanScenkonst" rel="12" class="button round small secondary" tabindex="8">Annan scenkonst</a>
+
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_arkitektur" rel="1" class="button round small secondary" tabindex="9">Arkitektur & design</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label>                             
+                                <a id="val_dans" rel="2"  class="button round small secondary" tabindex="10">Dans</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_film" rel="3" class="button round small secondary" tabindex="11">Film & media</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_formDesign" rel="4" class="button round small secondary" tabindex="12">Konst, form & design</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_litteraturberattande" rel="5" class="button round small secondary" tabindex="13">Litteratur, berättande & skrivande</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_musik" rel="6" class="button round small secondary" tabindex="14">Musik</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_naturochkultruarv" rel="7" class="button round small secondary" tabindex="15">Natur- och  kulturarv</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_nycirkus" rel="8" class="button round small secondary"tabindex="16">Nycirkus/cirkus</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_slojd" rel="9" class="button round small secondary" tabindex="17">Slöjd</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_teater" rel="10" class="button round small secondary" tabindex="18">Teater</a>
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <a id="val_teknik" rel="11" class="button round small secondary" tabindex="19">Teknik & multimedia</a>
+                            </label>
+                        </li>                        
+                    </ul>
+                </fieldset>
+
+            </div>
+
         </div>
         <div class="row">
-        <div class="small-12 text-center columns kk_aj_searchbuttonblock ">
-            <!-- use a tag for links to other locations -->
-            <!-- search button -->
-            <button class="button round tiny right kk_aj_searchformbutton " tabindex="20">HITTA ARRANGEMANG</button>                        
+            <div class="small-12 text-center columns kk_aj_searchbuttonblock ">
+                <!-- use a tag for links to other locations -->
+                <!-- search button -->
+                <button class="button round success kk_aj_searchformbutton " tabindex="20">Hitta arrangemang</button>                        
 
-            <!-- reset button -->
+                <!-- reset button -->
                 
-            <button type="button" class="button tiny left round kk_aj_searchRensaformbutton jplist-reset-btn"  data-control-type="reset" 
-                            data-control-name="reset" 
-                            data-control-action="reset" tabindex="21">NOLLSTÄLL SÖKNING</button>
+                <button type="button" class="button round secondary kk_aj_searchRensaformbutton jplist-reset-btn"  data-control-type="reset" 
+                                data-control-name="reset" 
+                                data-control-action="reset" tabindex="21">Nollställ sökning</button>
+            </div>
         </div>
     </div>
-    </div>
-    </div>
-   
 
-    <div id="kk_aj_masterproductlistblock" class="small-12 columns ">
-       <div class="row ">   
-          
-        <div class="small-12 large-9 large-offset-3 hittaarrHeader columns " >
-               <h2>Hitta arrangemang (<span id="searchantal">2</span> st)</h2>
-         </div>
+   
+<div id="kk_aj_masterproductlistblock">
   
     <!--Produktlista och filter -->
     <div id="kk_aj_mainproductlistblock" class="row kk_aj_mainproductlistblock ">
@@ -302,7 +339,7 @@
             </div>
         </div>
 
-        <div class="medium-12 large-8 large-offset-1 columns kk_aj_productlistblock"> 
+        <div class="medium-12 large-9 columns kk_aj_productlistblock"> 
             <div class="row jplist-panel">
             <div class="medium-7 large-7 columns"><h3>Filtrerade arrangemang</h3>
                 <div id="kk_aj_valdsokning" class="row" style="display:none;">       
@@ -390,24 +427,7 @@
         </div>
       
     </div>
-
-    </div>
-    </div>
-
-    <div class="small-12 columns kk_aj_omkulturkatalogenblock">   
-        <div class="row ">
-        
-            <!-- use a tag for links to other locations -->
-            <!-- use button tag for on page actions -->
-            <div class="small-12 large-8 columns" >
-                <h2>Allt om Kulturkatalogen Väst</h2>  
-                <p>Kulturkatalogen Väst är Västra Götalandsregionens gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.
-                Hitta artister och konstnärer som går att engagera till skolor, bibliotek, fritidsgårdar och föreningar.</p>       
-                
-                <button class="button round tiny kk_aj_kontaktmbutton " tabindex="20">MER OM KULTURKATALOGEN VÄST</button>                
-            </div>       
-        
-        </div>
+</div>
     </div>
 <div id="kk_aj_conf" style="">
     
