@@ -76,23 +76,23 @@
                 <div class="large-12 columns "> <h3>Välj konstform</h3></div>
                 <div class="large-6 columns ">                       
                     <div class="kontformBlock">
-                        <a id="val_alla" rel="0" class="searchformbutton vald" tabindex="3">Alla</a>
-                        <a id="val_Resmalsbesok" rel="7" class="searchformbutton" tabindex="3">Besöksmål med resestöd</a>
-                        <a id="val_Forestallning" rel="1" class="searchformbutton" tabindex="4">Föreställning på turné</a>
-                        <a id="val_Skolbio" rel="8" class="searchformbutton" tabindex="5">Skolbio</a>
-                        <a id="val_Utstallningpaturne" rel="2" class="searchformbutton" tabindex="6">Utställning på turné</a>
-                        <a id="val_Kulturpedagogiskaprojekt" rel="4" class="searchformbutton" tabindex="7">Workshops/Projekt</a>
-                        <a id="val_Kulturpedagogiskaprojekt" rel="4" class="searchformbutton" tabindex="7">Workshops/Projekt</a>
+                        <a id="val_allakonstformer" rel="0" class="searchformbutton vald" tabindex="1">Alla</a>
+                        <a id="val_annanScenkonst" rel="12" class="searchformbutton" tabindex="2">Annan scenkonst</a>
+                        <a id="val_arkitektur" rel="1" class="searchformbutton" tabindex="3">Arkitektur & design</a>
+                        <a id="val_dans" rel="2" class="searchformbutton" tabindex="4">Dans</a>
+                        <a id="val_film" rel="3" class="searchformbutton" tabindex="5">Film & media</a>
+                        <a id="val_formDesign" rel="4" class="searchformbutton" tabindex="6">Konst, form & design</a>
+                        <a id="val_litteraturberattande" rel="5" class="searchformbutton" tabindex="7">Litteratur, berättande & skrivande</a>
                     </div>
                 </div>
                 <div class="large-6 columns">                          
                     <div class="kontformBlock">
-                        <a id="val_alla" rel="0" class="searchformbutton" tabindex="3">Alla</a>
-                        <a id="val_Resmalsbesok" rel="7" class="searchformbutton" tabindex="3">Besöksmål med resestöd</a>
-                        <a id="val_Forestallning" rel="1" class="searchformbutton" tabindex="4">Föreställning på turné</a>
-                        <a id="val_Skolbio" rel="8" class="searchformbutton" tabindex="5">Skolbio</a>
-                        <a id="val_Utstallningpaturne" rel="2" class="searchformbutton" tabindex="6">Utställning på turné</a>
-                        <a id="val_Kulturpedagogiskaprojekt" rel="4" class="searchformbutton" tabindex="7">Workshops/Projekt</a>
+                        <a id="val_musik" rel="6" class="searchformbutton" tabindex="8">Musik</a>
+                        <a id="val_naturochkultruarv" rel="7" class="searchformbutton" tabindex="9">Natur- och  kulturarv</a>
+                        <a id="val_nycirkus" rel="8" class="searchformbutton" tabindex="10">Nycirkus/cirkus</a>
+                        <a id="val_slojd" rel="9" class="searchformbutton" tabindex="11">Slöjd</a>
+                        <a id="val_teater" rel="10" class="searchformbutton" tabindex="12">Teater</a>
+                        <a id="val_teknik" rel="11" class="searchformbutton" tabindex="13">Teknik & multimedia</a>
                     </div>
                 </div>
             </div>    
@@ -123,8 +123,10 @@
     <div id="kk_aj_masterproductlistblock" class="small-12 columns ">
        <div class="row ">   
           
-        <div class="small-12 large-9 large-offset-3 hittaarrHeader columns " >
-               <h2>Hitta arrangemang (<span id="searchantal">2</span> st)</h2>
+        <div class="small-12 large-8 large-offset-4 hittaarrHeader columns " >
+           
+                <h2>Hittade arrangemang (<span id="searchantal">2</span> st)</h2>
+           
          </div>
   
     <!--Produktlista och filter -->
@@ -132,13 +134,13 @@
        
                 <div class="jplist-ios-button">
                     <i class="fa fa-sort-desc" aria-hidden="true"></i>
-                    Förfina sök
+                    Förfina sökningen
                 </div>
          
         <div class="small-12 large-3 columns kk_aj_filterblock jplist-panel" > 
-             <h3>Förfina sök</h3>            
+             <h3>Förfina sökningen</h3>            
 
-            <div class="row">
+            <%--<div class="row">
                 <div class="small-12 columns ">
                      
                         <label for="Arrangörstypfilter" style="display:none;">Arrangörstypfilter</label>   
@@ -151,13 +153,13 @@
                             <option data-path="default">Arrangörstyp</option>
                             <option data-path=".S_AR_7">Besöksmål med resestöd</option>
                             <option data-path=".S_AR_1">Föreställning på turné</option>                            
-                            <%--<option data-path=".S_AR_5">Kompetensutveckling</option>  --%>                          
+                           <option data-path=".S_AR_5">Kompetensutveckling</option>                       
                             <option data-path=".S_AR_8">Skolbio</option>			
                             <option data-path=".S_AR_4">Workshops/Projekt</option>					
                         </select>
-                  
+                   
                 </div>
-            </div>
+            </div>--%>    
                           
             <div class="row">
                 <div class="small-12 columns ">
@@ -183,8 +185,7 @@
                             <option data-path=".S_KF_10">Teater</option>                              
                             <option data-path=".S_KF_11">Teknik & multimedia</option>                           						
                         </select>
-                    
-                </div>
+                    </div>
             </div>                              
             
             <div class="row">
@@ -208,7 +209,7 @@
             </div>
             <div class="row">
                 <div class="small-12 columns spellangdblock">
-                    <h4>Kostnad</h4> 
+                    <h3>Kostnad</h3> 
                        <div 
                          class="jplist-range-slider"
                          data-control-type="range-slider" 
@@ -228,7 +229,7 @@
 
             <div class="row">
                 <div class="small-12 columns spellangdblock">
-                    <h4>Spellängd</h4> 
+                    <h3>Spellängd</h3> 
                        <div 
                          class="jplist-range-slider"
                          data-control-type="range-slider" 
@@ -284,37 +285,31 @@
                    
                 </div>
             </div>          
-            
-            
-             
+                 
             <div class="row">
                 <div class="small-12 columns ">
                     <div class="resetbox">
                         <a href="#" id="kk_aj_reset" type="button" 
-                                class="jplist-reset-btn button secondary tiny "
+                                class="button tiny left round kk_aj_searchRensaformbutton jplist-reset-btn "
                                 data-control-type="reset" 
                                 data-control-name="reset" 
                                 data-control-action="reset">
                                 Återställ filter
                         </a>
                     </div>
+                    <div id="antalarr" style="display:none;" class="jplist-label" data-type="{all}" data-control-type="pagination-info" data-control-name="paging" data-control-action="paging"></div>
+                
                 </div>
             </div>
         </div>
 
         <div class="medium-12 large-8 large-offset-1 columns kk_aj_productlistblock"> 
             <div class="row jplist-panel">
-            <div class="medium-7 large-7 columns"><h3>Filtrerade arrangemang</h3>
-                <div id="kk_aj_valdsokning" class="row" style="display:none;">       
-                   <div class="small-12 columns">
-                       <ul id="kk_aj_valdsokord"></ul>
-                   </div>
-               </div>
-            </div>
+            
             <div class="medium-2 large-2 columns kk_aj_sort ">                        
                     
                 <label for="Sorterafilter" style="display:none;">Sortera</label>   
-                <select 
+                <select
                     id="Sorterafilter" 
                     class="jplist-select" 
                     data-control-type="sort-select" 
@@ -323,14 +318,15 @@
                     data-datetime-format="{month}/{day}/{year}">
          
                     <option data-path="default">Sortera</option>
-                    <option data-path=".kk_aj_title" data-order="asc" data-type="text">Rubrik A-Ö</option>
-                    <option data-path=".kk_aj_title" data-order="desc" data-type="text">Rubrik Ö-A</option>                          								
+                    <option data-path=".kk_aj_title" data-order="asc" data-type="text">Sortera A-Ö</option>
+                    <option data-path=".kk_aj_title" data-order="desc" data-type="text">Sortera Ö-A</option>                          								
                 </select>		
       
-
             </div>
             <div class="medium-3 large-3 columns">
-                <a id="kk_aj_cmd_minneslistan" class="button tiny info right "><i class="fa fa-shopping-basket" aria-hidden="true"></i> Minneslista <span class="cmd_minneslistan"></span></a>
+                <a id="kk_aj_cmd_minneslistan" class="button tiny left round kk_aj_visaminneslistan right ">
+                    <img src="/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Add-New-32.png" alt="Visa minneslistan" title="Visa minneslistan"/>Visa minneslistan <span class="cmd_minneslistan"></span>
+                </a>
             </div>           
                </div>          		
             <div id="kk_aj_productlist" class="kk_aj_productlist">               
@@ -375,6 +371,7 @@
             <div class="row kk_aj_productPagerblock">                
                 <div class="small-12 columns">
                     <div class="jplist-panel ">
+                       
                         <div 
                              class="jplist-pagination" 
                              data-control-type="pagination" 
