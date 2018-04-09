@@ -9,53 +9,37 @@
             <div class="small-12  columns kk_aj_searchHeader" >
                 <h1>Kulturkatalogen Väst</h1>
             
-                <div class="small-6 columns">
+                <div class="small-12 medium-9">
 
-                    <ul id="pagemenyblock">
-                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Hitta arrangemang</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Textsök</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Sök igenom kategori</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Allt om Kulturkatalogen Väst</a></li>
-                        <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> Kontaktpersoner</a></li>
+                    <ul id="pagemenyblock">                        
+                        <li><a href="#kk_aj_mainFreetextSearchblock"><i class="fa fa-caret-right" aria-hidden="true"></i> Textsök</a></li>
+                        <li><a href="#kk_aj_mainsearchblock"><i class="fa fa-caret-right" aria-hidden="true"></i> Sök igenom kategori</a></li>                       
+                        
                     </ul>
                 </div>
             </div>       
        
         </div>
     </div>
-
-    <div class="small-12 columns kk_aj_mainInfotextblock">   
-        <div class="row ">
-        
-            <!-- use a tag for links to other locations -->
-            <!-- use button tag for on page actions -->
-            <div class="small-12 large-8 columns" >
-                <h2>Hitta arrangemang</h2>  
-                <p>Kulturkatalogen Väst är Västra Götalandsregionens gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.
-                Hitta artister och konstnärer som går att engagera till skolor, bibliotek, fritidsgårdar och föreningar.</p>                     
-            </div>       
-        
-        </div>
-    </div>
-    
-    <div class="small-12 columns kk_aj_mainFreetextSearchblock">
+ 
+    <div id="kk_aj_mainFreetextSearchblock" class="small-12 columns kk_aj_mainFreetextSearchblock">
         <div class="row ">             
         <div class="small-12 columns " >
                <h2>Textsök i Kulturkatalogen Väst...</h2>
             <div class="row collapse ">
-                <div class="small-8 columns">
+                <div class="small-12 columns">
                     
                     <label for="kk_aj_freetextSearch" style="display:none;">Textsök i Kulturkatalogen Väst...</label>
                     <input type="text" id="kk_aj_freetextSearch" name="kk_aj_freetextSearch" style="width:100%;" class=""  tabindex="1"/>
                 </div>
-                <div class="small-4 columns text-center">                    
+                <div class="small-12 columns text-center">                    
                     <a href="#" id="kk_aj_btnfreetextSearch" name="kk_aj_btnfreetextSearch" class="button tiny round" tabindex="2" >HITTA ARRANGEMANG</a>
                 </div>
             </div>
         </div>              
     </div>
     </div>
-     <div class="small-12 columns kk_aj_mainsearchblock">
+     <div id="kk_aj_mainsearchblock" class="small-12 columns kk_aj_mainsearchblock">
         <div class="row kk_aj_mainsearchblock">
                    <div class="small-12 columns " >
                <h2>...eller sök genom kategori</h2>
@@ -72,7 +56,7 @@
                 </div>
             </div>
             
-            <div class="large-7 large-offset-1 columns" >
+            <div class="large-7 large-offset-1 columns mainkonstformblock" >
                 <div class="large-12 columns "> <h3>Välj konstform</h3></div>
                 <div class="large-6 columns ">                       
                     <div class="kontformBlock">
@@ -107,11 +91,11 @@
         <div class="small-12 text-center columns kk_aj_searchbuttonblock ">
             <!-- use a tag for links to other locations -->
             <!-- search button -->
-            <button class="button round tiny right kk_aj_searchformbutton " tabindex="20">HITTA ARRANGEMANG</button>                        
+            <button class="button round tiny kk_aj_searchformbutton " tabindex="20">HITTA ARRANGEMANG</button>                        
 
             <!-- reset button -->
                 
-            <button type="button" class="button tiny left round kk_aj_searchRensaformbutton jplist-reset-btn"  data-control-type="reset" 
+            <button type="button" class="button tiny round kk_aj_searchRensaformbutton jplist-reset-btn"  data-control-type="reset" 
                             data-control-name="reset" 
                             data-control-action="reset" tabindex="21">NOLLSTÄLL SÖKNING</button>
         </div>
@@ -132,8 +116,7 @@
     <!--Produktlista och filter -->
     <div id="kk_aj_mainproductlistblock" class="row kk_aj_mainproductlistblock ">
        
-                <div class="jplist-ios-button">
-                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
+                <div class="jplist-ios-button">                    
                     Förfina sökningen
                 </div>
          
@@ -391,21 +374,7 @@
     </div>
     </div>
 
-    <div class="small-12 columns kk_aj_omkulturkatalogenblock">   
-        <div class="row ">
-        
-            <!-- use a tag for links to other locations -->
-            <!-- use button tag for on page actions -->
-            <div class="small-12 large-8 columns" >
-                <h2>Allt om Kulturkatalogen Väst</h2>  
-                <p>Kulturkatalogen Väst är Västra Götalandsregionens gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.
-                Hitta artister och konstnärer som går att engagera till skolor, bibliotek, fritidsgårdar och föreningar.</p>       
-                
-                <button class="button round tiny kk_aj_kontaktmbutton " tabindex="20">MER OM KULTURKATALOGEN VÄST</button>                
-            </div>       
-        
-        </div>
-    </div>
+    
 <div id="kk_aj_conf" style="">
     
     <span id="kk_aj_CurrentUserid" class="kk_aj_CurrentUserid" runat="server"></span>

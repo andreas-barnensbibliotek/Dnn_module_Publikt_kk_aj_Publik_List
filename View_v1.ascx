@@ -9,19 +9,35 @@
             <div class="small-12  columns kk_aj_searchHeader" >
                 <h1>Kulturkatalogen Väst</h1>
             
-                <div class="small-12 medium-9">
+                <div class="small-12 medium-6 columns">
 
-                    <ul id="pagemenyblock">                        
+                    <ul id="pagemenyblock">
+                        <li><a href="#kk_aj_hittaarrBlock"><i class="fa fa-caret-right" aria-hidden="true"></i> Hitta arrangemang</a></li>
                         <li><a href="#kk_aj_mainFreetextSearchblock"><i class="fa fa-caret-right" aria-hidden="true"></i> Textsök</a></li>
-                        <li><a href="#kk_aj_mainsearchblock"><i class="fa fa-caret-right" aria-hidden="true"></i> Sök igenom kategori</a></li>                       
-                        
+                        <li><a href="#kk_aj_mainsearchblock"><i class="fa fa-caret-right" aria-hidden="true"></i> Sök igenom kategori</a></li>
+                        <li><a href="#kk_aj_omkulturkatalogenblock"><i class="fa fa-caret-right" aria-hidden="true"></i> Allt om Kulturkatalogen Väst</a></li>
+                        <li><a href="#kk_aj_kontaktpersonblock"><i class="fa fa-caret-right" aria-hidden="true"></i> Kontaktpersoner</a></li>
                     </ul>
                 </div>
             </div>       
        
         </div>
     </div>
- 
+
+    <div class="small-12 columns kk_aj_mainInfotextblock">   
+        <div class="row ">
+        
+            <!-- use a tag for links to other locations -->
+            <!-- use button tag for on page actions -->
+            <div id="kk_aj_hittaarrBlock" class="small-12 large-8 columns" >
+                <h2>Hitta arrangemang</h2>  
+                <p>Kulturkatalogen Väst är Västra Götalandsregionens gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.
+                Hitta artister och konstnärer som går att engagera till skolor, bibliotek, fritidsgårdar och föreningar.</p>                     
+            </div>       
+        
+        </div>
+    </div>
+    
     <div id="kk_aj_mainFreetextSearchblock" class="small-12 columns kk_aj_mainFreetextSearchblock">
         <div class="row ">             
         <div class="small-12 columns " >
@@ -56,7 +72,7 @@
                 </div>
             </div>
             
-            <div class="large-7 large-offset-1 columns mainkonstformblock" >
+            <div class="large-7 large-offset-1 columns" >
                 <div class="large-12 columns "> <h3>Välj konstform</h3></div>
                 <div class="large-6 columns ">                       
                     <div class="kontformBlock">
@@ -116,7 +132,8 @@
     <!--Produktlista och filter -->
     <div id="kk_aj_mainproductlistblock" class="row kk_aj_mainproductlistblock ">
        
-                <div class="jplist-ios-button">                    
+                <div class="jplist-ios-button">
+                    <i class="fa fa-sort-desc" aria-hidden="true"></i>
                     Förfina sökningen
                 </div>
          
@@ -374,7 +391,21 @@
     </div>
     </div>
 
-    
+    <div id="kk_aj_omkulturkatalogenblock" class="small-12 columns kk_aj_omkulturkatalogenblock">   
+        <div class="row ">
+        
+            <!-- use a tag for links to other locations -->
+            <!-- use button tag for on page actions -->
+            <div class="small-12 large-8 columns" >
+                <h2>Allt om Kulturkatalogen Väst</h2>  
+                <p>Kulturkatalogen Väst är Västra Götalandsregionens gemensamma samlingsplats för kulturaktiviteter riktade mot barn och unga.
+                Hitta artister och konstnärer som går att engagera till skolor, bibliotek, fritidsgårdar och föreningar.</p>       
+                
+                <button class="button round tiny kk_aj_kontaktmbutton" tabindex="20">MER OM KULTURKATALOGEN VÄST</button>                
+            </div>       
+        
+        </div>
+    </div>
 <div id="kk_aj_conf" style="">
     
     <span id="kk_aj_CurrentUserid" class="kk_aj_CurrentUserid" runat="server"></span>
