@@ -13,7 +13,7 @@
 
                     <ul id="pagemenyblock">                        
                         <li><a href="#kk_aj_mainFreetextSearchblock"><i class="fa fa-caret-right" aria-hidden="true"></i> Textsök</a></li>
-                        <li><a href="#kk_aj_mainsearchblock"><i class="fa fa-caret-right" aria-hidden="true"></i> Sök igenom kategori</a></li>                       
+                        <li><a href="#kk_aj_mainsearchblock"><i class="fa fa-caret-right" aria-hidden="true"></i> Sök genom kategori</a></li>                       
                         
                     </ul>
                 </div>
@@ -96,7 +96,7 @@
             <!-- reset button -->
                 
             <button type="button" class="button tiny round kk_aj_searchRensaformbutton jplist-reset-btn"  data-control-type="reset" 
-                            data-control-name="reset" 
+                            data-control-name="reset2" 
                             data-control-action="reset" tabindex="21">NOLLSTÄLL SÖKNING</button>
         </div>
     </div>
@@ -109,7 +109,7 @@
           
         <div class="small-12 large-8 large-offset-4 hittaarrHeader columns " >
            
-                <h2>Hittade arrangemang (<span id="searchantal">2</span> st)</h2>
+                <h2>Hittade arrangemang (<span id="searchantal">0</span> st)</h2>
            
          </div>
   
@@ -121,28 +121,7 @@
                 </div>
          
         <div class="small-12 large-3 columns kk_aj_filterblock jplist-panel" > 
-             <h3>Förfina sökningen</h3>            
-
-            <%--<div class="row">
-                <div class="small-12 columns ">
-                     
-                        <label for="Arrangörstypfilter" style="display:none;">Arrangörstypfilter</label>   
-                        <select  id="Arrangörstypfilter" 
-                            class="jplist-select" 
-                            data-control-type="filter-select" 
-                            data-control-name="category-filter" 
-                            data-control-action="filter">       
-         
-                            <option data-path="default">Arrangörstyp</option>
-                            <option data-path=".S_AR_7">Besöksmål med resestöd</option>
-                            <option data-path=".S_AR_1">Föreställning på turné</option>                            
-                           <option data-path=".S_AR_5">Kompetensutveckling</option>                       
-                            <option data-path=".S_AR_8">Skolbio</option>			
-                            <option data-path=".S_AR_4">Workshops/Projekt</option>					
-                        </select>
-                   
-                </div>
-            </div>--%>    
+             <h3>Förfina sökningen</h3>                        
                           
             <div class="row">
                 <div class="small-12 columns ">
@@ -151,8 +130,9 @@
                         <select  id="Ytterligarekonstformfilter" 
                             class="jplist-select" 
                             data-control-type="filter-select" 
-                            data-control-name="category-filter" 
-                            data-control-action="filter">       
+                            data-control-name="konstform-filter" 
+                            data-control-action="filter"
+                            data-control-storage="true">       
          
                             <option data-path="default">Ytterligare konstform</option>
                             <option data-path=".S_KF_12">Annan scenkonst</option>
@@ -177,8 +157,10 @@
                     <select  id="Bokningsbarfilter"
                         class="jplist-select" 
                         data-control-type="filter-select" 
-                        data-control-name="category-filter" 
-                        data-control-action="filter">       
+                        data-control-name="bokningsbar-filter" 
+                        data-control-action="filter"
+                        data-control-storage="true"
+                        >       
          
                         <option data-path="default">Bokningsbar t.o.m.</option>
                         <option data-path=".S_BB_p1">Jan-Mar</option>
@@ -198,6 +180,7 @@
                          data-control-type="range-slider" 
                          data-control-name="range-slider-kostnad" 
                          data-control-action="filter"
+                         data-control-storage="true"
                          data-path=".S_KO"
                          data-slider-func="kostnadSlider" 
                          data-setvalues-func="kostnadValues">
@@ -219,6 +202,7 @@
                          data-control-name="range-slider-likes" 
                          data-control-action="filter"
                          data-path=".S_ST"
+                         data-control-storage="true"
                          data-slider-func="likesSlider" 
                          data-setvalues-func="likesValues">
                                                  
@@ -236,8 +220,10 @@
                     <select  id="Morkläggningfilter"
                         class="jplist-select" 
                         data-control-type="filter-select" 
-                        data-control-name="category-filter" 
-                        data-control-action="filter">       
+                        data-control-name="morklaggning-filter" 
+                        data-control-action="filter"
+                        data-control-storage="true"
+                        >       
          
                         <option data-path="default">Mörkläggning</option>
                         <option data-path=".S_ML_1">Nej</option>
@@ -255,8 +241,9 @@
                     <select  id="Takhojdfilter"
                         class="jplist-select" 
                         data-control-type="filter-select" 
-                        data-control-name="category-filter" 
-                        data-control-action="filter">       
+                        data-control-name="takhojd-filter" 
+                        data-control-action="filter"
+                        data-control-storage="true">       
          
                         <option data-path="default">Takhöjd</option>
                         <option data-path=".S_TH_2">Upp till 2 meter</option>
@@ -298,7 +285,8 @@
                     data-control-type="sort-select" 
                     data-control-name="sort" 
                     data-control-action="sort"
-                    data-datetime-format="{month}/{day}/{year}">
+                    data-datetime-format="{month}/{day}/{year}"
+                    data-control-storage="false">
          
                     <option data-path="default">Sortera</option>
                     <option data-path=".kk_aj_title" data-order="asc" data-type="text">Sortera A-Ö</option>
@@ -307,14 +295,16 @@
       
             </div>
             <div class="medium-3 large-3 columns">
-                <a id="kk_aj_cmd_minneslistan" class="button tiny left round kk_aj_visaminneslistan right ">
+                <a id="kk_aj_cmd_minneslistan" class="button tiny left round kk_aj_visaminneslistan kk_aj_cmd_minneslistan right ">
                     <img src="/Portals/_default/Skins/kk_aj_Publik_Bespin/public/images/Add-New-32.png" alt="Visa minneslistan" title="Visa minneslistan"/>Visa minneslistan <span class="cmd_minneslistan"></span>
                 </a>
             </div>           
                </div>          		
-            <div id="kk_aj_productlist" class="kk_aj_productlist">               
-                <img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Ajax-loader. Laddar arrangemangslista" />
-            </div>  
+            <div id="kk_aj_productlist" class="kk_aj_productlist">
+            </div> 
+             <div id="kk_aj_spinner" class="kk_aj_spinner">               
+                <h3 class="kk_aj_title"><img src="/Portals/_default/Skins/kk_aj_Publik_Acklay/public/ajax-loader.gif" alt="Laddar arrangemangslista" />  Letar arrangemang</h3>
+            </div>   
             <div class="jplist-no-results">
               
                 <div class="row kk_aj_arritem" rel="">
@@ -360,7 +350,9 @@
                              data-control-type="pagination" 
                              data-control-name="paging" 
                              data-control-action="paging"
+                            data-control-storage="false"
                              data-control-animate-to-top="false"
+                             data-jump-to-start="true"
                              data-items-per-page="5">
                         </div>
                     </div>
